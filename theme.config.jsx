@@ -9,7 +9,7 @@ const config = {
   chat: {
     link: 'https://discord.gg/57EJbMGX',
   },
-  docsRepositoryBase: 'https://github.com/stakersunion/docs',
+  docsRepositoryBase: 'https://github.com/stakersunion/docs/tree/main/',
   useNextSeoProps() {
     return {
       titleTemplate: '%s – Stakers Union',
