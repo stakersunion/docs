@@ -13,6 +13,9 @@ const config = {
   chat: {
     link: 'https://discord.gg/57EJbMGX',
   },
+  feedback: {
+    content: 'Submit feedback'
+  },
   docsRepositoryBase: 'https://github.com/stakersunion/docs/tree/main/',
   useNextSeoProps() {
     return {
