@@ -9,6 +9,13 @@ const config = {
     link: 'https://discord.gg/57EJbMGX',
   },
   docsRepositoryBase: 'https://github.com/stakersunion/docs',
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Stakers Union',
+    }
+  },
+  primaryHue: 0,
+  primarySaturation: 0,
   footer: {
     text: 'Stakers Union',
   },
