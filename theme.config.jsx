@@ -3,6 +3,10 @@ import Logo from 'components/logo'
 
 const config = {
   logo: <Logo />,
+  darkMode: false,
+  nextThemes: {
+    defaultTheme: 'dark',
+  },
   project: {
     link: 'https://github.com/stakersunion/docs',
   },
