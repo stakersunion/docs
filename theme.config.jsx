@@ -1,7 +1,8 @@
 import React from 'react'
+import Logo from 'components/logo'
 
 const config = {
-  logo: <span>Stakers Union Docs</span>,
+  logo: <Logo />,
   project: {
     link: 'https://github.com/stakersunion/docs',
   },
