@@ -8,10 +8,10 @@ const config = {
     defaultTheme: 'dark',
   },
   project: {
-    link: 'https://github.com/stakersunion/docs',
+    link: process.env.NEXT_PUBLIC_GITHUB_LINK,
   },
   chat: {
-    link: 'https://discord.gg/57EJbMGX',
+    link: process.env.NEXT_PUBLIC_DISCORD_LINK,
   },
   feedback: {
     content: 'Submit feedback',
