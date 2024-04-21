@@ -1,7 +1,21 @@
+import Link from 'next/link'
+import { Button } from '/components/ui/button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiscord } from '@fortawesome/free-brands-svg-icons'
+
 # Multipliers
 
 Some home-stakers may be granted multipliers based on a demonstration of a commitment to the network. The following are some examples:
+
 1. **Genesis**: Home-stakers who have been staking since the genesis of the Beacon Chain. These stakers helped Ethereum reach the minimum stake required to launch the Beacon Chain.
 2. **Pre-Merge**: These home-stakers deposited their ETH knowing they would be unable to withdraw.
 3. **Performance**: Home-stakers who maintained high uptime and performance.
 4. **Testnet**: Home-stakers who participated in testnets.
+
+<br />
+
+<Link href={process.env.NEXT_PUBLIC_DISCORD_LINK} asChild>
+  <Button className={'mt-4'}>
+    <FontAwesomeIcon icon={faDiscord} /> Join Discord
+  </Button>
+</Link>
