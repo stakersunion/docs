@@ -1,0 +1,6 @@
+{
+  "watch": ["pages", "components", "lib"],
+  "ext": "js,jsx,ts,tsx,json",
+  "ignore": ["node_modules"],
+  "exec": "bun run dev"
+}
