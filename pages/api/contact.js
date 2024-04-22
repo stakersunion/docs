@@ -17,6 +17,7 @@ export default function handler(req, res) {
     const mailOptions = {
       from: 'thame@stakersunion.com',
       to: 'tomfadial@gmail.com',
+      replyTo: email,
       subject: 'Stakers Union Contact Form',
       text: `
         Email: ${email}
