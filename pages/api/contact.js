@@ -15,10 +15,13 @@ export default function handler(req, res) {
     })
 
     const mailOptions = {
-      from: email,
-      to: 'thame@stakersunion.com',
+      from: 'thame@stakersunion.com',
+      to: 'tomfadial@gmail.com',
       subject: 'Stakers Union Contact Form',
-      text: message,
+      text: `
+        Email: ${email}
+        Message: ${message}
+      `,
     }
 
     transporter.sendMail(mailOptions, function (error, info) {
