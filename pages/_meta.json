@@ -1,6 +1,7 @@
 {
   "index": "Introduction",
   "membership": "Membership",
-  "appeals": "Appeals",
-  "contact": "Contact"
+  "contact": {
+    "display": "hidden"
+  }
 }
