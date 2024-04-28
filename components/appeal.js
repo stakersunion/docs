@@ -35,6 +35,15 @@ const stakingMethods = [
   'Squid',
   'Other',
 ]
+const defaultValues = {
+  email: '',
+  ethAddress: '',
+  addressType: '',
+  lists: '',
+  stakingMethod: '',
+  otherStakingMethod: '',
+  rationale: '',
+}
 
 const schema = z.object({
   email: z.union([z.literal(''), z.string().email()]),
@@ -57,15 +66,7 @@ const schema = z.object({
 const Appeal = () => {
   const form = useForm({
     resolver: zodResolver(schema),
-    defaultValues: {
-      email: '',
-      ethAddress: '',
-      addressType: '',
-      lists: '',
-      stakingMethod: '',
-      otherStakingMethod: '',
-      rationale: '',
-    },
+    defaultValues,
   })
 
   const onSubmit = async (data) => {
@@ -89,7 +90,7 @@ const Appeal = () => {
 
   useEffect(() => {
     if (form.formState.isSubmitSuccessful) {
-      form.reset()
+      form.reset(defaultValues, { keepIsSubmitted: true })
     }
   }, [form.formState, form.reset])
 
@@ -97,7 +98,7 @@ const Appeal = () => {
 
   return (
     <Form {...form}>
-      {form.formState.isSubmitSuccessful && (
+      {form.formState.isSubmitted && (
         <Alert
           variant={'success'}
           className={'my-6'}
@@ -148,7 +149,7 @@ const Appeal = () => {
               <FormLabel>Address Type</FormLabel>
               <Select
                 onValueChange={field.onChange}
-                defaultValue={field.value}
+                value={field.value}
               >
                 <FormControl>
                   <SelectTrigger>
@@ -220,7 +221,7 @@ const Appeal = () => {
               <FormLabel>Staking Method</FormLabel>
               <Select
                 onValueChange={field.onChange}
-                defaultValue={field.value}
+                value={field.value}
               >
                 <FormControl>
                   <SelectTrigger>
