@@ -28,22 +28,33 @@ The Stakers Union prioritizes independent/decentralized node operation, performa
 
 ## Commitment
 
-| Stage[^1]  | Multiplier |
-| ---------- | ---------- |
-| Genesis    | 1.5        |
-| Pre-Merge  | 1.25       |
-| Post-Merge | 1          |
+### Entry
+
+| Stage[^2]                                             | Multiplier |
+| ----------------------------------------------------- | ---------- |
+| Genesis <br /> <small>(deposit before launch)</small> | 1.5        |
+| Pre-Merge                                             | 1.25       |
+| Post-Merge                                            | 1          |
+
+### Other
+
+| Activity                                                     | Multiplier |
+| ------------------------------------------------------------ | ---------- |
+| [KZG Ceremony Participation](https://ceremony.ethereum.org/) | 1.125      |
 
 ## Multiplier Calculation
+
 ```text
 Final Multiplier = Independent Node Operation Multiplier * Average Performance Multiplier * Commitment Multiplier
 ```
 
 ## Example
+
 For a pre-merge home node with 1/2 block proposals, >99% attestations and >99% sync participation:
-* Independent Node Operation Multiplier = ```1```
-* Average Performance Multiplier = ```(0.5 + 1 + 1) / 3 = 0.83```
-* Commitment Multiplier = ```1.25```
+
+- Independent Node Operation Multiplier = `1`
+- Average Performance Multiplier = `(0.5 + 1 + 1) / 3 = 0.83`
+- Commitment Multiplier = `1.25`
 
 ```text
 Final Multiplier = 1 * 0.83 * 1.25 = 1.03
