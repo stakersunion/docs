@@ -22,7 +22,7 @@ import * as z from 'zod'
 import { isAddress } from 'ethers'
 
 const addressTypes = ['Withdrawal', 'Deposit', 'Fee Recipient']
-const lists = ['GLCNI/StakeCat List A', 'GLCNI/StakeCat List B', 'Rated']
+const lists = ['GLCNI/StakeCat List A', 'Rated']
 const stakingMethods = [
   'Home',
   'RocketPool',
