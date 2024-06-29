@@ -1,0 +1,3 @@
+[install.scopes] 
+"@awesome.me" = { url = "https://npm.fontawesome.com/", token = "$FONTAWESOME_TOKEN" }
+"@fortawesome" = { url = "https://npm.fontawesome.com/", token = "$FONTAWESOME_TOKEN" }
