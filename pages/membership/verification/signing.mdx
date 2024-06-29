@@ -1,11 +1,31 @@
 # Signing a Message
 
-Membership in the Stakers Union requires verification of signed messages from deposit or withdrawal addresses associated with your validators.
+Membership in the Stakers Union requires verification of a signed message from an eligible address.
 
-## Etherscan Verified Signatures
-Etherscan provides a [simple interface](https://etherscan.io/verifiedSignatures) for signing an arbitrary text message (the Stakers Union [Oath](/membership/verification#oath) in this case). The interface allows for connections to hardware wallets through MetaMask, WalletConnect, and Coinbase Wallet.
+## Etherscan Message Signing
+
+Etherscan provides a [simple interface](https://etherscan.io/verifiedSignatures) for signing an arbitrary text message. The interface allows for connections to hardware wallets through MetaMask, WalletConnect, and Coinbase Wallet.
+
+### Steps
+
+1. Go to [Etherscan Verified Signature](https://etherscan.io/verifiedSignatures)
+2. Click on the "Sign Message" button and connect your wallet
+3. Enter the [Stakers Union Oath](/membership/verification#oath) in the "Message" field
+4. Click on the "Sign Message" button and complete the interaction with your wallet
+5. Click on the "Publish" button and save the URL to your verified signature (ex. `https://etherscan.io/verifySig/123456`)
 
 ## Offline Signing
+
 For those who prefer to sign messages offline, options include:
+
 1. [MyCrypto](https://download.mycrypto.com/)
-2. [ethdo](https://github.com/wealdtech/ethdo)
+2. [MEW](https://github.com/MyEtherWallet/MyEtherWallet)
+
+### Steps
+
+1. Complete the offline signing process and copy the output to your internet-connected computer
+2. Go to [Etherscan Verified Signature](https://etherscan.io/verifiedSignatures)
+3. Click on the "Verify Signature" button
+4. Fill in the required fields (Signature Hash must start with 0x, [learn more](https://info.etherscan.com/verify-signature-tool/#verifying-a-message))
+5. Select the "Verify and Publish" option
+6. Click on the "Continue" button and save the URL to your verified signature (ex. `https://etherscan.io/verifySig/123456`)
