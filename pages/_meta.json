@@ -5,5 +5,11 @@
   "initiatives": "Initiatives",
   "contact": {
     "display": "hidden"
+  },
+  "members": {
+    "title": "Members",
+    "type": "page",
+    "href": "https://members.stakersunion.com/",
+    "newWindow": true
   }
 }
