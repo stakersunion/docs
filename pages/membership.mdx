@@ -1,10 +1,51 @@
+import { Cards, Card } from 'nextra/components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faSignature,
+  faCalculatorSimple,
+  faSplit,
+  faGavel,
+} from '@awesome.me/kit-ebf6e3e7b8/icons/sharp/solid'
+
 # Membership
 
 ## Eligibility
+
 The Stakers Union prioritizes independent node operators with particular emphasis on those running hardware at home. We recognize that access to stable networking and power is not universal so "remote" stakers (using the [Nixo Classification](https://paragraph.xyz/@ethstaker/define-solo-staker)) are also eligible with a lower multiplier. We exclude "managed" stakers as independent node operation and control over configuration including client selection is a core value of the Stakers Union.
 
+Eligible members include validators on StakeCat's Solo Staker Lists ([List A](https://github.com/Stake-Cat/Solo-Stakers/blob/main/Solo-Stakers/Solo-Stakers-A.csv), [RocketPool](https://github.com/Stake-Cat/Solo-Stakers/blob/main/Solo-Stakers/Rocketpool-Solo-Stakers.csv)) or an accepted appeal (submitted during verification process if needed).
+
+Importantly, the amount of ETH staked is not important: a node operator running a single Rocket Pool minipool is considered to have equal standing to one with multiple solo-validators.
+
 ## Participation
-Stakers Union membership is an active commitment and inducted members are expected to participate in [initiatives](/initiatives). The Stakers Union will also develop a regular newsletter which may include action items (ex. voting on proposals, calls to modify client selection).
+
+Stakers Union membership is an active commitment and inducted members are expected to participate in [initiatives](/initiatives). Stakers Union members get access to the `#members-only` Discord channel where they can vote on proposals and appeals.
 
 ## Maintenance
-Members must maintain active validators and high uptime. Stakers Union membership will be reviewed periodically and inactive members may be removed.
+
+To remain in good standing, members must also maintain high-performance of active validators.
+
+## Learn More
+
+<Cards>
+  <Card
+    icon={<FontAwesomeIcon icon={faSignature} />}
+    title={'Verification'}
+    href={'/membership/verification'}
+  />
+  <Card
+    icon={<FontAwesomeIcon icon={faCalculatorSimple} />}
+    title={'Multipliers'}
+    href={'/membership/multipliers'}
+  />
+  <Card
+    icon={<FontAwesomeIcon icon={faSplit} />}
+    title={'Distribution'}
+    href={'/membership/distribution'}
+  />
+  <Card
+    icon={<FontAwesomeIcon icon={faGavel} />}
+    title={'Appeals'}
+    href={'/membership/appeals'}
+  />
+</Cards>
