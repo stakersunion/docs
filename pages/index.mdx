@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from 'components/ui/button'
+import { Steps } from 'nextra/components'
 
 # Stakers Union
 
@@ -25,13 +26,39 @@ Home- and solo-stakers are the backbone of the Ethereum network and are responsi
 3. Establish connections with ecosystem participants who are interested in supporting this public good
 4. Secure stable, long-term incentives to encourage home-staking
 
-## Next Steps
+## Timeline
 
-Expand the community and develop a comprehensive proposal with the following key components:
+<Steps>
 
-- [x] Define membership requirements
-- [x] Determine verification process
+### Form Stakers Union
+
+- [x] Define [membership](/membership) requirements
+- [x] Determine [verification](/membership/verification) process
 - [x] Build membership management system
-- [ ] Develop and implement governance structure
+
+### Accept Members
+
+- [x] Launch [membership application](https://www.stakersunion.com/apply)
+- [x] Review and approve applications
+
+### Develop Governance
+
+- [x] Develop and implement [governance](/governance) structure
+- [ ] Review and vote on subcommittee [leaders](/governance/leadership)
+- [ ] Launch subcommittees
+- [ ] Create Stakers Union multisigner account
+
+### Incentives and Distribution
+
 - [ ] Identify and communicate with interested ecosystem participants
-- [ ] Develop distribution process (performance, vesting)
+- [ ] Apply for grants and funding
+- [ ] Refine distribution process
+
+</Steps>
+
+<div className={'flex flex-row items-center mt-4'}>
+  <Link href={'/status'}>
+    <Button>Status</Button>
+  </Link>
+  <span className={'text-sm ml-4'}>Learn about topics of active discussion and development.</span>
+</div>

@@ -4,6 +4,10 @@
   "governance": "Governance",
   "incentives": "Incentives",
   "initiatives": "Initiatives",
+  "---": {
+    "type": "separator"
+  },
+  "status": "Status",
   "contact": {
     "display": "hidden"
   },
