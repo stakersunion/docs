@@ -71,6 +71,18 @@ const config = {
   footer: {
     text: 'Stakers Union',
   },
+  banner: {
+    key: 'test-change',
+    text: (
+      <a
+        href={'https://github.com/stakersunion/docs/tree/test-change'}
+        target={'_blank'}
+      >
+        📜 This is a proposal for <strong>'test-change'</strong> | View changes.
+      </a>
+    ),
+    dismissible: false,
+  },
 }
 
 export default config
