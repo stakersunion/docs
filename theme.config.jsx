@@ -75,7 +75,7 @@ const config = {
     key: 'test-change',
     text: (
       <a
-        href={'https://github.com/stakersunion/docs/tree/test-change'}
+        href={'https://github.com/stakersunion/docs/compare/main...test-change'}
         target={'_blank'}
       >
         📜 This is a proposal for <strong>'test-change'</strong> | View changes.
