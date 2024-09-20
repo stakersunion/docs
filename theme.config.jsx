@@ -78,7 +78,7 @@ const config = {
         href={'https://github.com/stakersunion/docs/compare/main...test-change'}
         target={'_blank'}
       >
-        📜 This is a proposal for <strong>'test-change'</strong> | View changes.
+        📜 This is a proposal for <strong>'test-change'</strong> | View changes →
       </a>
     ),
     dismissible: false,
