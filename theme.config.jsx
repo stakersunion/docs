@@ -71,6 +71,18 @@ const config = {
   footer: {
     text: 'Stakers Union',
   },
+  banner: {
+    key: 'graffiti',
+    text: (
+      <a
+        href={'https://github.com/stakersunion/docs/compare/main...graffiti'}
+        target={'_blank'}
+      >
+        📜 This is a proposal for <strong>'graffiti'</strong> | View changes →
+      </a>
+    ),
+    dismissible: false,
+  },
 }
 
 export default config
