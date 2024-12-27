@@ -8,6 +8,9 @@
     "type": "separator"
   },
   "status": "Status",
+  "roadmap": {
+    "display": "hidden"
+  },
   "contact": {
     "display": "hidden"
   },
