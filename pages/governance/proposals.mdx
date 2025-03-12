@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { Button } from 'components/ui/button'
+
 # Proposals
 
 ## Overview
@@ -11,6 +14,12 @@ The Stakers Union uses the [Snapshot](https://vote.stakersunion.com/) platform t
 ### Voting Requirements
 
 Voting requires verified membership in the Stakers Union indicated by an address holding the [Verified Member POAP](https://collectors.poap.xyz/drop/175498). If you are a verified member and have not received a POAP, please contact [thame](mailto:thame@stakersunion.com?subject=Verified%20POAP&body=I%20am%20a%20verified%20member%20but%20have%20not%20received%20a%20verified%20POAP%20mint%20link.%20My%20Stakers%20Union%20Profile%20is%20up-to-date.).
+
+<div className={'mt-4'}>
+  <Link href={'/governance/voting'}>
+    <Button>Voting Instructions</Button>
+  </Link>
+</div>
 
 ### Voting Rules
 
