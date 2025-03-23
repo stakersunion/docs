@@ -71,6 +71,18 @@ const config = {
   footer: {
     text: 'Stakers Union',
   },
+  banner: {
+    key: 'no-quorum',
+    text: (
+      <a
+        href={'https://github.com/stakersunion/docs/compare/main...no-quorum'}
+        target={'_blank'}
+      >
+        📜 This is a proposal for <strong>'no-quorum'</strong> | View changes →
+      </a>
+    ),
+    dismissible: false,
+  },
 }
 
 export default config
