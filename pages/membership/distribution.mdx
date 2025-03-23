@@ -7,23 +7,21 @@
 
 ## Method
 
-The Stakers Union will use a [Splits](https://splits.org/) contract to distribute funds to members. Members voted to select [Gnosis Chain](https://www.gnosis.io/) and a contract has been initialized at the following address: [0xd4787AC18b141133ECB1c24ec1f91B5D6c311355](https://app.splits.org/accounts/0xd4787AC18b141133ECB1c24ec1f91B5D6c311355/?chainId=100).
+The Stakers Union will use a [Splits](https://splits.org/) contract to distribute funds to members. Splits contracts distributing to verified members are deployed on the following chains/addresses:
 
-Funds are requested to [stakersunion.eth](https://app.ens.domains/stakersunion.eth) which is managed by a multisig with the following members:
+| Chain    | Address                                                                                                                               |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Mainnet  | [0x0974BCD54Cfe0370D06F358E6DF41eBf464455Ff](https://app.splits.org/accounts/0x0974BCD54Cfe0370D06F358E6DF41eBf464455Ff/?chainId=1)   |
+| Optimism | [0xDdE77Dd5e2dEe107a1268A30fF4D28bE105C04C0](https://app.splits.org/accounts/0xDdE77Dd5e2dEe107a1268A30fF4D28bE105C04C0/?chainId=10)  |
+| Gnosis   | [0xd4787AC18b141133ECB1c24ec1f91B5D6c311355](https://app.splits.org/accounts/0xd4787AC18b141133ECB1c24ec1f91B5D6c311355/?chainId=100) |
 
-1. [stakersunion](https://etherscan.io/address/0xb1c125e5cD5f4f7B473cb59C999f82B2583C4459)
-2. [gov.ramana.eth](https://etherscan.io/address/0xB0De8cB8Dcc8c5382c4b7F3E978b491140B2bC55)
-3. [hackworth.eth](https://etherscan.io/address/0xc799bE8De03F20B2D3b101E6F6516D614e6fFe06)
-4. [ipetkov.eth](https://etherscan.io/address/0xe6b5A31d8bb53D2C769864aC137fe25F4989f1fd)
-5. [fras3r.eth](https://etherscan.io/address/0x7ddC7359bE75DDed606F7bE2FF140E90F21C0997)
-6. [nixo.eth](https://etherscan.io/address/0x5554672e67bA866B9861701D0e0494AB324aD19A)
+Funds are requested directly to the Splits contract when possible. In some circumstances, a smart contract may not be eligible as a recipient address in which case funds are directed to [stakersunion.eth](https://app.ens.domains/stakersunion.eth) which is managed by a multisig with the following members:
 
-Signers transfer funds to the Splits contract which will distribute funds to verified members each season.
+1. [thame](https://etherscan.io/address/0xb1c125e5cD5f4f7B473cb59C999f82B2583C4459)
+2. [nixo.eth](https://etherscan.io/address/0x5554672e67bA866B9861701D0e0494AB324aD19A)
+
+Signers transfer funds to the Splits contract which will distribute funds to verified members. Our goal is to increase the number of multisig participants by adding subcommittee leaders as signers. Recently, subcommittee leaders have rotated out too rapidly to ensure reliable multisig participation and we will await some stability in leadership before adding additional signers.
 
 ## Seasons
 
 Distributions will be made in "seasons" aligning with annual fiscal quarters. Members eligible for distribution must be a verified member for the duration of the season.
-
-### Schedule
-
-1. **Season 1:** Q4 2024 (October 1 - December 31)
