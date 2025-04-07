@@ -1,0 +1,89 @@
+import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserPlus, faUserMinus, faEllipsis } from '@awesome.me/kit-ebf6e3e7b8/icons/sharp/solid'
+
+# Delegation
+
+Delegation for the Stakers Union Snapshot Space is managed [here](https://vote.stakersunion.com/#/delegates). Delegation interactions are published on Gnosis Chain and therefore require xDAI to pay for gas. If you do not have xDAI, you can request some from the [Gnosis Chain faucet](https://faucet.gnosischain.com/).
+
+## Delegating Your Voting Power
+
+There are several options for delegating your voting power depending on whether you know the address of the delegatee or if you would like to delegate to an existing delegatee.
+
+### Enter the Delegatee's Address
+
+<div className={'my-4 border border-neutral-700 rounded-lg overflow-hidden bg-neutral-800'}>
+  <Image
+    src={'/delegate-new.png'}
+    alt={'Email'}
+    width={800}
+    height={400}
+  />
+  <div
+    className={
+      'text-sm text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-50 dark:bg-neutral-700'
+    }
+  >
+    Select the <FontAwesomeIcon icon={faUserPlus} /> icon in the top right corner of the Snapshot
+    page, enter the delegatee's address, and select "Delegate".
+  </div>
+</div>
+
+### Select an Existing Delegatee
+
+<div className={'my-4 border border-neutral-700 rounded-lg overflow-hidden bg-neutral-800'}>
+  <Image
+    src={'/delegate-existing.png'}
+    alt={'Email'}
+    width={800}
+    height={400}
+  />
+  <div
+    className={
+      'text-sm text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-50 dark:bg-neutral-700'
+    }
+  >
+    Select the <FontAwesomeIcon icon={faEllipsis} /> icon to the right of the delegatee's address
+    and select "Delegate" in the dropdown menu.
+  </div>
+</div>
+
+## Undelegating Your Voting Power
+
+<div className={'my-4 border border-neutral-700 rounded-lg overflow-hidden bg-neutral-800'}>
+  <Image
+    src={'/undelegate.png'}
+    alt={'Email'}
+    width={800}
+    height={400}
+  />
+  <div
+    className={
+      'text-sm text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-50 dark:bg-neutral-700'
+    }
+  >
+    If you have delegated your voting power, you will see your current delegatee under "Delegating
+    To". Select the <FontAwesomeIcon icon={faEllipsis} /> icon to the right of the delegatee's
+    address and select <FontAwesomeIcon icon={faUserMinus} /> "Undelegate" in the dropdown menu.
+  </div>
+</div>
+
+## Becoming a Delegatee
+
+If you are interested in becoming a delegatee you can customize your profile to include a statement reflecting your voting objectives to guide members in their delegation decisions.
+
+<div className={'my-4 border border-neutral-700 rounded-lg overflow-hidden bg-neutral-800'}>
+  <Image
+    src={'/delegatee.png'}
+    alt={'Email'}
+    width={800}
+    height={400}
+  />
+  <div
+    className={
+      'text-sm text-neutral-600 dark:text-neutral-300 p-2 bg-neutral-50 dark:bg-neutral-700'
+    }
+  >
+    Select the "Edit my statement" button to edit your profile to include a statement reflecting your voting objectives.
+  </div>
+</div>
