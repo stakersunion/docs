@@ -71,18 +71,6 @@ const config = {
   footer: {
     text: 'Stakers Union',
   },
-  banner: {
-    key: 'delegation',
-    text: (
-      <a
-        href={'https://github.com/stakersunion/docs/compare/main...delegation'}
-        target={'_blank'}
-      >
-        📜 This is a proposal for <strong>'delegation'</strong> | View changes →
-      </a>
-    ),
-    dismissible: false,
-  },
 }
 
 export default config
