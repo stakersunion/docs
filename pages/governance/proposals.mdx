@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from 'components/ui/button'
+import SnapshotLink from 'components/snapshotLink'
 
 # Proposals
 
@@ -9,7 +10,7 @@ The Stakers Union is governed by both subcommittee leaders and members. Members 
 
 ## Voting
 
-The Stakers Union uses the [Snapshot](https://vote.stakersunion.com/) platform to submit and vote on proposals. To submit a proposal, you must have an account on Snapshot.
+The Stakers Union uses the <SnapshotLink href={'/'}>Snapshot</SnapshotLink> platform to submit and vote on proposals. To submit a proposal, you must have an account on Snapshot.
 
 ### Voting Requirements
 
@@ -22,7 +23,7 @@ Voting requires verified membership in the Stakers Union indicated by an address
 </div>
 
 ### Delegating Voting Power
-Verified members can choose to delegate their voting power to a delegatee. The Stakers Union uses the [`"delegation"`](https://v1.snapshot.box/#/strategy/delegation) voting strategy, which allows members to delegate their voting power to another verified member without losing the ability to vote themselves if they choose to do so.
+Verified members can choose to delegate their voting power to a delegatee. The Stakers Union uses the [`"with-delegation"`](https://v1.snapshot.box/#/strategy/with-delegation) voting strategy, which allows members to delegate their voting power to a delegatee. Delegators can't take back their voting power from the delegatee.
 
 <div className={'mt-4'}>
   <Link href={'/governance/delegation'}>
