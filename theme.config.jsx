@@ -71,6 +71,18 @@ const config = {
   footer: {
     text: 'Stakers Union',
   },
+  banner: {
+    key: 'dappnode-verification',
+    text: (
+      <a
+        href={'https://github.com/stakersunion/docs/compare/main...dappnode-verification'}
+        target={'_blank'}
+      >
+        📜 This is a proposal for <strong>'dappnode-verification'</strong> | View changes →
+      </a>
+    ),
+    dismissible: false,
+  },
 }
 
 export default config

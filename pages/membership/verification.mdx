@@ -1,4 +1,5 @@
 import { Callout, Steps } from 'nextra/components'
+import { Tabs } from 'nextra/components'
 import Image from 'next/image'
 
 # Verification
@@ -26,18 +27,35 @@ I pledge my code and commitment to Ethereum, for this epoch and all the epochs t
 
 ### Proof of Independent Operation
 
-After approval of their signed message, prospective members will be able to select a date and time from a range of random options over a 1-week period. The prospective member must briefly disable attestations on at least one associated validator - this action proves the validator is under the control of the prospective member.
+After approval of their signed message, prospective members will be able to select one of two options to prove independent operation.
 
-#### Requirements
+<Tabs items={['Standard', 'DAppNode']}>
+  <Tabs.Tab>
+    The standard method is to select a date and time from a range of random options over a 1-week period. The prospective member must briefly disable attestations on at least one associated validator - this action proves the validator is under the control of the prospective member.
 
-1. Disable attestations beginning in the epoch following the selected date/time
-1. Minimum of two consecutive missed attestations and no more than ten consecutive missed attestations on at least one validator
-1. Only one repeat attempt is allowed if the first attempt fails
+    ##### Requirements
 
-#### Recommendations
+    1. Disable attestations beginning in the epoch following the selected date/time
+    1. Minimum of two consecutive missed attestations and no more than ten consecutive missed attestations on at least one validator
+    1. Only one repeat attempt is allowed if the first attempt fails
 
-1. Consider using a service like [ETHDuties](https://ethduti.es/) or [wenmerge](https://wenmerge.com/block-proposer-schedule/validator-proposal-subscription/) to avoid selecting a time when your validator is scheduled for high-priority tasks (block proposal, sync committee duty).
-1. Disabling validator for 19 minutes should be sufficient (~3 epochs).
+    ##### Recommendations
+
+    1. Consider using a service like [ETHDuties](https://ethduti.es/) or [wenmerge](https://wenmerge.com/block-proposer-schedule/validator-proposal-subscription/) to avoid selecting a time when your validator is scheduled for high-priority tasks (block proposal, sync committee duty).
+    1. Disabling validator for 19 minutes should be sufficient (~3 epochs).
+  </Tabs.Tab>
+  <Tabs.Tab>
+    Applicants running a DAppNode can use the [Stakers Union Verification DApp](https://github.com/stakersunion-org/DAppNodePackage-StakersUnion) to prove independent operation.
+
+    ##### Requirements
+
+    1. [Download and install](http://my.dappnode/installer/public/stakersunion.public.dappnode.eth) the Stakers Union Verification DApp on your DAppNode
+    1. Enter your eligible address during installation
+    1. Launch the DAppNode Verification UI to submit your verification
+    1. Return to the application page to track your verification status
+
+  </Tabs.Tab>
+</Tabs>
 
 ### Proof of Residential Operation
 
