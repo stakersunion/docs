@@ -1,0 +1,43 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from 'components/ui/card'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSitemap, faUserTie, faCheckToSlot } from '@awesome.me/kit-ebf6e3e7b8/icons/sharp/solid'
+import { Avatar, AvatarFallback, AvatarImage } from 'components/ui/avatar'
+import { Button } from 'components/ui/button'
+import Link from 'next/link'
+
+# Delegates
+
+<Card className={'mt-4'}>
+  <CardHeader>
+    <div className={'flex items-center gap-2'}>
+      <Avatar>
+        <AvatarImage src={'https://cdn.stamp.fyi/avatar/0x6d5EDdEcC7528C5C06b500D5188c13da1885c151?s=200'} />
+        <AvatarFallback>0x</AvatarFallback>
+      </Avatar>
+      <div className={'flex flex-1 flex-col'}>
+        <CardTitle>thame.eth</CardTitle>
+        <CardDescription>0x6d5EDdEcC7528C5C06b500D5188c13da1885c151</CardDescription>
+      </div>
+      <Link target={'_blank'} href={`${process.env.NEXT_PUBLIC_SNAPSHOT_LINK}/profile/0x6d5EDdEcC7528C5C06b500D5188c13da1885c151`}>
+        <Button variant={'outline'}>
+          <FontAwesomeIcon
+            icon={faCheckToSlot}
+            className={'mr-2'}
+          />
+          <span>Delegate</span>
+        </Button>
+      </Link>
+    </div>
+  </CardHeader>
+  <CardContent>
+    I’m a firm believer in the principle of decentralization and the promise of financial freedom
+    and inclusivity represented by cryptocurrencies broadly, and smart-contract platforms
+    specifically. As a long-time supporter of the Ethereum network—and a solo-staker since
+    genesis—I’ve witnessed firsthand the importance of preserving these core values. I founded the
+    Stakers Union to promote and support the essential role solo-stakers play in Ethereum’s
+    resilience. As a delegate, I’ll advocate for initiatives that strengthen Ethereum’s core
+    infrastructure, protect decentralization, and elevate the voices of solo-stakers. My decisions
+    will be technically informed, community-driven, and grounded in a long-term commitment to
+    Ethereum’s health and credibility.
+  </CardContent>
+</Card>
